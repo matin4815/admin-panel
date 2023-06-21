@@ -1,5 +1,6 @@
 package com.matin.adminpanel.controller;
 
+import com.matin.adminpanel.dto.ChangeVoteStatusDto;
 import com.matin.adminpanel.dto.ProductDisplayDto;
 import com.matin.adminpanel.service.vote.ProductVoteService;
 import jakarta.validation.Valid;
@@ -19,5 +20,10 @@ public class ProductVoteController {
     @PostMapping("/setting")
     public Boolean changeProductVoteSetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
         return productVoteService.changeProductVoteSetting(productDisplayDto);
+    }
+
+    @PostMapping("/change-status")
+    public Boolean changeVotesStatus(@RequestBody @Valid ChangeVoteStatusDto changeVoteStatusDto) {
+        return productVoteService.changeVotesStatus(changeVoteStatusDto);
     }
 }

@@ -1,5 +1,6 @@
 package com.matin.adminpanel.service.comment;
 
+import com.matin.adminpanel.dto.ChangeCommentStatusDto;
 import com.matin.adminpanel.dto.ProductDisplayDto;
 import com.matin.adminpanel.feign.ProductService;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,11 @@ public class ProductCommentServiceImpl implements ProductCommentService {
     @Override
     public Boolean changeProductCommentSetting(ProductDisplayDto productDisplayDto) {
         return productService.changeProductCommentSetting(productDisplayDto);
+    }
+
+    @Override
+    public Boolean changeCommentsStatus(ChangeCommentStatusDto changeCommentStatusDto) {
+        return productService.changeCommentStatus(changeCommentStatusDto);
     }
 
 }
