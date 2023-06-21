@@ -10,3 +10,8 @@ spring:
 
 server:
   port: 8282
+
+app.comments-and-votes-mode: all
+
+management.endpoints.web.ecposure.include=*
+
