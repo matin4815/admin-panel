@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/admindb
+    username: postgres
+    password: Aa123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  port: 8282
