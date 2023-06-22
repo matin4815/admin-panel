@@ -2255,3 +2255,1063 @@ feign.FeignException$NotFound: [404] during [POST] to [http://localhost:8181/com
                 Completed initialization in 1 ms
 [2023-06-21 07:22:01.823] WARN  DESKTOP-9D8RCUQ [nio-8282-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver :
                 Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+[2023-06-22 00:47:43.524] ERROR DESKTOP-9D8RCUQ [           main] org.springframework.boot.SpringApplication :
+                Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
+ in 'reader', line 16, column 1:
+    management.endpoints.web.ecposur ... 
+    ^
+could not find expected ':'
+ in 'reader', line 18, column 1:
+    
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:527)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:332)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:262)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:662)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:208)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:134)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:168)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:199)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:355)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.matin.adminpanel.AdminPanelApplication.main(AdminPanelApplication.java:15)
+[2023-06-22 00:48:10.824] ERROR DESKTOP-9D8RCUQ [           main] org.springframework.boot.SpringApplication :
+                Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
+ in 'reader', line 16, column 1:
+    management.endpoints.web.ecposur ... 
+    ^
+could not find expected ':'
+ in 'reader', line 18, column 1:
+    
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:527)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:332)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:262)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:662)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:208)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:357)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:336)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:311)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:212)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:134)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:168)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:199)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:355)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.matin.adminpanel.AdminPanelApplication.main(AdminPanelApplication.java:15)
+[2023-06-22 00:49:09.918] ERROR DESKTOP-9D8RCUQ [           main] org.springframework.boot.SpringApplication :
+                Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+ in 'reader', line 2, column 7:
+    spring:
+          ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:927)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:416)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.peekToken(ScannerImpl.java:286)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentEnd.produce(ParserImpl.java:303)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:208)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:134)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:168)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:499)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:199)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:355)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.matin.adminpanel.AdminPanelApplication.main(AdminPanelApplication.java:15)
+[2023-06-22 00:49:30.277] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 00:49:30.351] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 2436 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 00:49:30.353] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 00:49:31.704] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 00:49:31.734] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+[2023-06-22 00:49:31.908] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=098a36a1-a94e-372c-a87b-abd6c7e63034
+[2023-06-22 00:49:32.003] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 00:49:32.323] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8282 (http)
+[2023-06-22 00:49:32.330] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8282"]
+[2023-06-22 00:49:32.331] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 00:49:32.332] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 00:49:32.474] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 00:49:32.475] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2069 ms
+[2023-06-22 00:49:32.777] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 00:49:32.811] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 00:49:32.813] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 00:49:32.936] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 00:49:33.018] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 00:49:33.029] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 00:49:33.192] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e49b011
+[2023-06-22 00:49:33.195] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 00:49:33.240] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@5eb2972f
+[2023-06-22 00:49:33.319] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 00:49:33.468] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 00:49:33.476] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 00:49:33.656] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 00:49:35.166] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 00:49:35.261] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8282"]
+[2023-06-22 00:49:35.283] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8282 (http) with context path ''
+[2023-06-22 00:49:35.347] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 5.617 seconds (process running for 6.493)
+[2023-06-22 00:51:02.798] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-22 00:51:02.800] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-22 00:51:02.808] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 6 ms
+[2023-06-22 00:51:03.035] WARN  DESKTOP-9D8RCUQ [nio-8282-exec-2] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver :
+                Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+[2023-06-22 00:52:06.371] WARN  DESKTOP-9D8RCUQ [nio-8282-exec-5] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver :
+                Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/html;charset=UTF-8' is not supported]
+[2023-06-22 00:52:28.815] WARN  DESKTOP-9D8RCUQ [nio-8282-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver :
+                Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+[2023-06-22 00:52:32.480] WARN  DESKTOP-9D8RCUQ [nio-8282-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver :
+                Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.matin.adminpanel.configuration.CommentsAndVotesMode` from Object value (token `JsonToken.START_OBJECT`)]
+[2023-06-22 00:53:00.667] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 00:53:00.670] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 00:53:00.673] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 00:53:10.555] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 00:53:10.606] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 19380 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 00:53:10.607] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 00:53:12.453] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 00:53:12.519] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 44 ms. Found 0 JPA repository interfaces.
+[2023-06-22 00:53:13.014] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=098a36a1-a94e-372c-a87b-abd6c7e63034
+[2023-06-22 00:53:13.274] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 00:53:13.690] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8282 (http)
+[2023-06-22 00:53:13.701] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8282"]
+[2023-06-22 00:53:13.702] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 00:53:13.702] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 00:53:13.835] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 00:53:13.836] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 3185 ms
+[2023-06-22 00:53:14.180] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 00:53:14.226] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 00:53:14.228] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 00:53:14.355] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 00:53:14.438] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 00:53:14.449] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 00:53:14.623] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cf230bf
+[2023-06-22 00:53:14.626] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 00:53:14.698] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@538e74fc
+[2023-06-22 00:53:14.794] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 00:53:14.966] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 00:53:14.973] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 00:53:15.133] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 00:53:16.435] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 00:53:16.551] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8282"]
+[2023-06-22 00:53:16.570] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8282 (http) with context path ''
+[2023-06-22 00:53:16.629] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 6.715 seconds (process running for 8.121)
+[2023-06-22 00:53:19.292] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-22 00:53:19.293] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-22 00:53:19.298] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 3 ms
+[2023-06-22 00:55:19.484] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 00:55:19.487] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 00:55:19.493] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 01:00:25.673] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 01:00:25.705] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 3420 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 01:00:25.706] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 01:00:26.900] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 01:00:26.919] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[2023-06-22 01:00:27.097] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=098a36a1-a94e-372c-a87b-abd6c7e63034
+[2023-06-22 01:00:27.176] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 01:00:27.540] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8282 (http)
+[2023-06-22 01:00:27.547] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8282"]
+[2023-06-22 01:00:27.548] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 01:00:27.548] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 01:00:27.645] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 01:00:27.645] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1891 ms
+[2023-06-22 01:00:27.948] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 01:00:28.003] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 01:00:28.006] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 01:00:28.156] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 01:00:28.248] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 01:00:28.262] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 01:00:28.433] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64665781
+[2023-06-22 01:00:28.436] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 01:00:28.504] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@75bf9e67
+[2023-06-22 01:00:28.583] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 01:00:28.745] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 01:00:28.753] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 01:00:28.940] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 01:00:30.334] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 01:00:30.411] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8282"]
+[2023-06-22 01:00:30.433] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8282 (http) with context path ''
+[2023-06-22 01:00:30.507] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 5.345 seconds (process running for 6.266)
+[2023-06-22 01:00:34.033] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-22 01:00:34.034] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-22 01:00:34.039] INFO  DESKTOP-9D8RCUQ [nio-8282-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 5 ms
+[2023-06-22 02:04:48.666] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 02:04:48.681] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 02:04:48.695] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:09:32.944] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:09:32.975] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 15968 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 17:09:32.976] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:09:33.834] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:09:33.849] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+[2023-06-22 17:09:33.996] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f4cccafa-f226-3819-a79b-b87580eff2c6
+[2023-06-22 17:09:34.054] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 17:09:34.263] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:09:34.269] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:09:34.270] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:09:34.270] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:09:34.344] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:09:34.345] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1337 ms
+[2023-06-22 17:09:34.557] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:09:34.600] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:09:34.601] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:09:34.721] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:09:34.798] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:09:34.809] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:09:35.065] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bdbf8d3
+[2023-06-22 17:09:35.067] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:09:35.107] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4bbc02ef
+[2023-06-22 17:09:35.168] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:09:35.319] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:09:35.326] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:09:35.575] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:09:36.611] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:09:36.640] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:09:36.649] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 17:09:36.724] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:09:36.740] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 3129 (http) with context path ''
+[2023-06-22 17:09:36.741] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 3129
+[2023-06-22 17:09:36.745] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:09:36.769] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:09:36.771] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:09:36.785] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:09:36.785] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:09:36.785] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:09:36.785] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:09:36.785] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:09:36.785] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:09:36.785] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:09:37.074] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:09:37.077] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:09:37.079] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:09:37.084] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441177083 with initial instances count: 1
+[2023-06-22 17:09:37.086] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 17:09:37.086] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441177086, current=UP, previous=STARTING]
+[2023-06-22 17:09:37.088] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:09:37.140] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:09:37.155] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 4.504 seconds (process running for 5.269)
+[2023-06-22 17:09:51.238] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-22 17:09:51.238] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441191238, current=DOWN, previous=UP]
+[2023-06-22 17:09:51.238] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:09:51.244] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:09:51.257] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:09:51.259] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:09:51.262] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:09:51.263] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:10:20.330] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:10:20.356] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 8424 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 17:10:20.357] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:10:21.084] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:10:21.102] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[2023-06-22 17:10:21.244] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f4cccafa-f226-3819-a79b-b87580eff2c6
+[2023-06-22 17:10:21.300] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 17:10:21.499] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:10:21.506] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:10:21.506] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:10:21.506] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:10:21.595] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:10:21.595] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1208 ms
+[2023-06-22 17:10:21.791] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:10:21.832] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:10:21.834] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:10:21.945] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:10:22.005] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:10:22.015] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:10:22.125] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26d24d7a
+[2023-06-22 17:10:22.127] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:10:22.158] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4c8abec7
+[2023-06-22 17:10:22.207] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:10:22.331] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:10:22.335] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:10:22.477] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:10:23.401] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:10:23.430] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:10:23.438] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 17:10:23.498] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:10:23.512] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 3181 (http) with context path ''
+[2023-06-22 17:10:23.513] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 3181
+[2023-06-22 17:10:23.516] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:10:23.539] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:10:23.541] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:10:23.553] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:10:23.554] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:10:23.554] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:10:23.554] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:10:23.554] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:10:23.554] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:10:23.554] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:10:23.800] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:10:23.802] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:10:23.804] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:10:23.807] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441223806 with initial instances count: 1
+[2023-06-22 17:10:23.809] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 17:10:23.809] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441223809, current=UP, previous=STARTING]
+[2023-06-22 17:10:23.810] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:10:23.839] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:10:23.852] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 3.811 seconds (process running for 4.623)
+[2023-06-22 17:10:43.003] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-22 17:10:43.004] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441243004, current=DOWN, previous=UP]
+[2023-06-22 17:10:43.004] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:10:43.011] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:10:43.023] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:10:43.025] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:10:43.030] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:10:43.031] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:10:47.679] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:10:47.731] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 3296 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 17:10:47.733] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:10:48.584] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:10:48.600] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+[2023-06-22 17:10:48.742] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f4cccafa-f226-3819-a79b-b87580eff2c6
+[2023-06-22 17:10:48.796] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 17:10:48.987] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8282 (http)
+[2023-06-22 17:10:49.000] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8282"]
+[2023-06-22 17:10:49.001] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:10:49.001] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:10:49.076] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:10:49.076] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1298 ms
+[2023-06-22 17:10:49.292] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:10:49.321] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:10:49.323] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:10:49.413] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:10:49.473] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:10:49.481] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:10:49.612] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bdbf8d3
+[2023-06-22 17:10:49.614] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:10:49.643] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4bbc02ef
+[2023-06-22 17:10:49.698] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:10:49.833] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:10:49.839] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:10:49.991] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:10:50.990] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:10:51.014] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:10:51.023] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 17:10:51.088] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:10:51.112] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:10:51.115] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:10:51.128] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:10:51.128] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:10:51.128] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:10:51.128] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:10:51.128] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:10:51.128] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:10:51.129] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:10:51.366] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:10:51.368] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:10:51.370] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:10:51.373] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441251372 with initial instances count: 1
+[2023-06-22 17:10:51.375] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 17:10:51.375] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441251375, current=UP, previous=STARTING]
+[2023-06-22 17:10:51.376] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8282"]
+[2023-06-22 17:10:51.376] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8282: registering service...
+[2023-06-22 17:10:51.391] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8282 (http) with context path ''
+[2023-06-22 17:10:51.392] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 8282
+[2023-06-22 17:10:51.408] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8282 - registration status: 204
+[2023-06-22 17:10:51.433] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 4.23 seconds (process running for 5.035)
+[2023-06-22 17:11:18.718] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-22 17:11:18.718] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441278718, current=DOWN, previous=UP]
+[2023-06-22 17:11:18.718] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8282: registering service...
+[2023-06-22 17:11:18.725] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8282 - registration status: 204
+[2023-06-22 17:11:18.738] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:11:18.741] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:11:18.744] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:11:18.745] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:11:25.611] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:11:25.639] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 9088 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 17:11:25.640] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:11:26.401] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:11:26.416] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+[2023-06-22 17:11:26.558] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f4cccafa-f226-3819-a79b-b87580eff2c6
+[2023-06-22 17:11:26.609] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 17:11:26.802] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:11:26.807] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:11:26.808] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:11:26.808] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:11:26.877] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:11:26.878] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1209 ms
+[2023-06-22 17:11:27.147] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:11:27.177] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:11:27.179] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:11:27.271] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:11:27.331] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:11:27.341] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:11:27.450] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e28af44
+[2023-06-22 17:11:27.452] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:11:27.480] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@1d2d4d7a
+[2023-06-22 17:11:27.525] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:11:27.639] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:11:27.643] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:11:27.811] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:11:28.899] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:11:28.921] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:11:28.929] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 17:11:28.991] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:11:29.005] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 3266 (http) with context path ''
+[2023-06-22 17:11:29.006] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 3266
+[2023-06-22 17:11:29.009] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:11:29.031] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:11:29.034] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:11:29.046] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:11:29.047] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:11:29.047] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:11:29.047] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:11:29.047] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:11:29.047] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:11:29.047] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:11:29.305] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:11:29.307] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:11:29.309] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:11:29.312] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441289311 with initial instances count: 2
+[2023-06-22 17:11:29.314] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application ADMIN-PANEL with eureka with status UP
+[2023-06-22 17:11:29.315] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441289315, current=UP, previous=STARTING]
+[2023-06-22 17:11:29.316] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/DESKTOP-9D8RCUQ:admin-panel:0: registering service...
+[2023-06-22 17:11:29.352] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/DESKTOP-9D8RCUQ:admin-panel:0 - registration status: 204
+[2023-06-22 17:11:29.368] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 4.028 seconds (process running for 4.801)
+[2023-06-22 17:12:20.649] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application ADMIN-PANEL with eureka with status DOWN
+[2023-06-22 17:12:20.650] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441340650, current=DOWN, previous=UP]
+[2023-06-22 17:12:20.650] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/DESKTOP-9D8RCUQ:admin-panel:0: registering service...
+[2023-06-22 17:12:20.656] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/DESKTOP-9D8RCUQ:admin-panel:0 - registration status: 204
+[2023-06-22 17:12:20.669] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:12:20.671] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:12:20.676] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:12:20.676] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:12:25.827] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:12:25.858] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 3460 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 17:12:25.859] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:12:26.643] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:12:26.658] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+[2023-06-22 17:12:26.806] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f4cccafa-f226-3819-a79b-b87580eff2c6
+[2023-06-22 17:12:26.865] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 17:12:27.062] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:12:27.067] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:12:27.068] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:12:27.068] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:12:27.143] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:12:27.143] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1248 ms
+[2023-06-22 17:12:27.335] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:12:27.367] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:12:27.369] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:12:27.468] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:12:27.527] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:12:27.537] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:12:27.639] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26d24d7a
+[2023-06-22 17:12:27.640] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:12:27.666] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@4c8abec7
+[2023-06-22 17:12:55.875] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:12:55.908] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.7 with PID 15788 (C:\Users\Mosavi\IdeaProjects\admin-panel\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\admin-panel)
+[2023-06-22 17:12:55.910] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:12:56.851] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:12:56.867] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+[2023-06-22 17:12:57.041] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f4cccafa-f226-3819-a79b-b87580eff2c6
+[2023-06-22 17:12:57.098] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-22 17:12:57.303] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:12:57.308] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:12:57.308] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:12:57.309] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:12:57.382] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:12:57.382] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1388 ms
+[2023-06-22 17:12:57.576] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:12:57.606] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:12:57.608] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:12:57.704] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:12:57.760] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:12:57.769] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:12:57.873] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@42ffbab6
+[2023-06-22 17:12:57.875] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:12:57.903] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@72e36677
+[2023-06-22 17:12:57.950] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:12:58.073] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:12:58.077] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:12:58.205] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:12:58.252] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.openfeign.FeignClientFactoryBean :
+                For 'product-service' URL not provided. Will try picking an instance via load-balancing.
+[2023-06-22 17:12:59.295] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:12:59.317] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:12:59.326] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-22 17:12:59.384] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:12:59.399] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 3386 (http) with context path ''
+[2023-06-22 17:12:59.400] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 3386
+[2023-06-22 17:12:59.403] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:12:59.424] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:12:59.427] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:12:59.440] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:12:59.440] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:12:59.440] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:12:59.440] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:12:59.440] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:12:59.440] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:12:59.441] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:12:59.680] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:12:59.681] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:12:59.684] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:12:59.690] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441379689 with initial instances count: 0
+[2023-06-22 17:12:59.692] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application ADMIN-PANEL with eureka with status UP
+[2023-06-22 17:12:59.692] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441379692, current=UP, previous=STARTING]
+[2023-06-22 17:12:59.693] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/DESKTOP-9D8RCUQ:admin-panel:0: registering service...
+[2023-06-22 17:12:59.730] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/DESKTOP-9D8RCUQ:admin-panel:0 - registration status: 204
+[2023-06-22 17:12:59.742] INFO  DESKTOP-9D8RCUQ [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 4.256 seconds (process running for 5.219)
+[2023-06-22 17:13:29.685] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:13:29.686] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:13:29.686] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:13:29.686] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:13:29.686] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:13:29.686] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: false
+[2023-06-22 17:13:29.688] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:13:29.705] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:17:59.450] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:22:59.463] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:27:43.511] INFO  DESKTOP-9D8RCUQ [o-auto-1-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-22 17:27:43.514] INFO  DESKTOP-9D8RCUQ [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-22 17:27:43.587] INFO  DESKTOP-9D8RCUQ [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 72 ms
+[2023-06-22 17:27:59.472] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:32:59.485] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:37:59.501] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:42:59.506] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:47:59.517] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:52:59.526] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
