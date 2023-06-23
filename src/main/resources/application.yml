@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: admin-panel
   datasource:
     url: jdbc:postgresql://localhost:5432/admindb
     username: postgres
@@ -9,4 +11,14 @@ spring:
 
 
 server:
-  port: 8282
+  port: 0
+
+app:
+  comments-and-votes-mode: all
+
+management:
+  endpoints:
+    web:
+      ecposure:
+        include=*:
+
