@@ -13,3 +13,6 @@ spring:
 server:
   port: 0
 
+api:
+  capabilities:
+    adminControlSwitch=true:
