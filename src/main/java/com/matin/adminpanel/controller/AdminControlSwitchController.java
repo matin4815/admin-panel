@@ -15,7 +15,7 @@ public class AdminControlSwitchController {
     }
 
     @PostMapping("/admin-switch")
-    public ResponseEntity<String> updateAdminSwitch(@RequestBody boolean newSwitchValue) {
+    public ResponseEntity<String> updateAdminSwitch(@RequestParam boolean newSwitchValue) {
         adminControlSwitchConfiguration.setAdminControlSwitch(newSwitchValue);
         return ResponseEntity.ok("Admin switch updated successfully.");
     }

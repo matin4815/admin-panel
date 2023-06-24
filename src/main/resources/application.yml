@@ -13,12 +13,6 @@ spring:
 server:
   port: 0
 
-app:
-  comments-and-votes-mode: all
-
-management:
-  endpoints:
-    web:
-      ecposure:
-        include=*:
-
+api:
+  capabilities:
+    adminControlSwitch=true:
