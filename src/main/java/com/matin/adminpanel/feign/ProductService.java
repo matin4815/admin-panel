@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(value = "product-service", url = "localhost:8181")
+@FeignClient(value = "product-service")
 public interface ProductService {
 
     @PostMapping("/products/display")

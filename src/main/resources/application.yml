@@ -1,16 +1,24 @@
 spring:
+  application:
+    name: admin-panel
   datasource:
-    url: jdbc:postgresql://localhost:5432/admindb
+    url: jdbc:postgresql://192.168.19.82:5438/postgres
     username: postgres
-    password: Aa123456
+    password: admin
   jpa:
     hibernate:
       ddl-auto: update
 
 
 server:
-  port: 8282
+  port: 0
 
-api:
-  capabilities:
-    adminControlSwitch=false:
+app:
+  comments-and-votes-mode: all
+
+management:
+  endpoints:
+    web:
+      ecposure:
+        include=*:
+
