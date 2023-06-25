@@ -3301,3 +3301,143 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
                 HikariPool-1 - Shutdown completed.
 [2023-06-24 12:38:56.657] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
                 Shutting down DiscoveryClient ...
+[2023-06-24 17:16:00.885] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-24 17:16:00.941] INFO  matin-Lenovo-G50-70 [           main] com.matin.adminpanel.AdminPanelApplication :
+                Starting AdminPanelApplication using Java 17.0.6 with PID 156968 (/home/matin/IdeaProjects/admin-panel/target/classes started by matin in /home/matin/IdeaProjects/admin-panel)
+[2023-06-24 17:16:00.942] INFO  matin-Lenovo-G50-70 [           main] com.matin.adminpanel.AdminPanelApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-24 17:16:02.361] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-24 17:16:02.385] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+[2023-06-24 17:16:02.662] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=dad6e25c-d834-3ddd-9f34-79c05cfbcc9a
+[2023-06-24 17:16:02.764] INFO  matin-Lenovo-G50-70 [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.adminpanel.feign.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-24 17:16:03.088] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-24 17:16:03.097] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 17:16:03.098] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-24 17:16:03.099] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-24 17:16:03.201] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-24 17:16:03.202] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2192 ms
+[2023-06-24 17:16:03.569] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-24 17:16:03.613] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-24 17:16:03.615] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-24 17:16:03.760] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 17:16:03.856] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-24 17:16:03.869] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-24 17:16:04.025] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@186f7434
+[2023-06-24 17:16:04.027] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-24 17:16:04.076] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@48d31d25
+[2023-06-24 17:16:04.152] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 17:16:04.337] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-24 17:16:04.346] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 17:16:04.574] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-24 17:16:04.655] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.openfeign.FeignClientFactoryBean :
+                For 'product-service' URL not provided. Will try picking an instance via load-balancing.
+[2023-06-24 17:16:06.323] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-24 17:16:06.366] WARN  matin-Lenovo-G50-70 [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-24 17:16:06.382] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver :
+                Exposing 1 endpoint(s) beneath base path '/actuator'
+[2023-06-24 17:16:06.503] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 17:16:06.520] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 35555 (http) with context path ''
+[2023-06-24 17:16:06.521] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 35555
+[2023-06-24 17:16:06.527] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-24 17:16:06.568] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-24 17:16:06.572] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:16:06.594] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-24 17:16:06.594] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-24 17:16:06.594] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-24 17:16:06.594] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-24 17:16:06.594] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-24 17:16:06.594] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-24 17:16:06.594] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-24 17:16:07.086] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-24 17:16:07.089] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-24 17:16:07.093] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-24 17:16:07.099] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687614367098 with initial instances count: 1
+[2023-06-24 17:16:07.102] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application ADMIN-PANEL with eureka with status UP
+[2023-06-24 17:16:07.103] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687614367103, current=UP, previous=STARTING]
+[2023-06-24 17:16:07.105] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0: registering service...
+[2023-06-24 17:16:07.144] INFO  matin-Lenovo-G50-70 [           main] com.matin.adminpanel.AdminPanelApplication :
+                Started AdminPanelApplication in 6.919 seconds (process running for 8.966)
+[2023-06-24 17:16:07.175] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0 - registration status: 204
+[2023-06-24 17:21:06.598] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:26:06.599] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:31:06.600] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:36:06.601] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:41:06.601] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:46:06.602] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:51:06.603] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:56:06.604] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 18:01:06.605] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 18:06:06.606] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 18:10:17.232] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application ADMIN-PANEL with eureka with status DOWN
+[2023-06-24 18:10:17.233] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687617617233, current=DOWN, previous=UP]
+[2023-06-24 18:10:17.233] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0: registering service...
+[2023-06-24 18:10:17.244] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0 - registration status: 204
+[2023-06-24 18:10:17.258] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 18:10:17.260] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-24 18:10:17.263] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-24 18:10:17.264] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
